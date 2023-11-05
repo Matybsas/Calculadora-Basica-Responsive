@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora con HTML, CSS y JavaScript</h1>
+        <h3>Realizado por Matias </h3>
+        <div class="hrTitulo">
+            <hr>
+        </div>
+        <div class="contenedorCalculadora">
+            <div class="visor">
+                <input type="text" id="pantalla" readonly>
+            </div>
+            <hr>
+            <div class="botonesNumericos">
+                <input type="button" value="7" class="boton" onclick="agregarPantalla('7')">
+                <input type="button" value="8" class="boton" onclick="agregarPantalla('8')">
+                <input type="button" value="9" class="boton" onclick="agregarPantalla('9')">
+                <br>
+                <input type="button" value="4" class="boton" onclick="agregarPantalla('4')">
+                <input type="button" value="5" class="boton" onclick="agregarPantalla('5')">
+                <input type="button" value="6" class="boton" onclick="agregarPantalla('6')">
+                <br>
+                <input type="button" value="1" class="boton" onclick="agregarPantalla('1')">
+                <input type="button" value="2" class="boton" onclick="agregarPantalla('2')">
+                <input type="button" value="3" class="boton" onclick="agregarPantalla('3')">
+                <br>
+                <input type="button" value="0" class="boton" onclick="agregarPantalla('0')">
+                <input type="button" value="." class="boton" onclick="agregarPantalla('.')">
+                <input type="button" value="=" class="boton" onclick="calcular()">
+                <br>
+                <div class="botonCe">
+                    <input type="button" value="CE" onclick="borrarPantalla()">
+                </div>
+            </div>
+            <div class="botonCalculo">
+                <input type="button" value="/" class="boton" onclick="agregarPantalla('/')">
+                <input type="button" value="*" class="boton" onclick="agregarPantalla('*')">
+                <input type="button" value="-" class="boton" onclick="agregarPantalla('-')">
+                <input type="button" value="+" class="boton" onclick="agregarPantalla('+')">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
